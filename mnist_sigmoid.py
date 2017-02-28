@@ -26,8 +26,8 @@ y_train = np.delete(y_train, np.s_[train_counts:], axis=0)
 X_test = np.delete(X_test, np.s_[testing_counts:], axis=0)
 y_test = np.delete(y_test, np.s_[testing_counts:], axis=0)
 
-X_train /= 255
-X_test /= 255
+X_train = X_train/255
+X_test =X_test/255
 
 print('X_train shape:', X_train.shape)
 print(X_train.shape[0], 'train samples')
